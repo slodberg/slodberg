@@ -61,8 +61,72 @@ h2 {
 
 /*------------Generalt Slut------------*/
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*----------Om os--------------*/
+.col_om {
+    width: 50vw;
+    background-color: antiquewhite;
+}
+
 #om_os {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+/*---------Kontakt---------*/
+.col_kontakt {
+    width: 50vw;
+    background-color: antiquewhite;
+}
+
+#kontakt {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#video {
+    background-color: aquamarine;
+}
+
+/*---------Forside------*/
+#splash {
     background-color: aqua;
-    width: auto;
+}
+
+.col {
+    width: 50vw;
+    background-color: antiquewhite;
+}
+
+#forside {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#produkt_kategorier {
+    display: flex;
+    flex-direction: row;
+}
+
+#rep {
+    background-color: aqua;
 }
