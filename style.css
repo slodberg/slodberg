@@ -1,43 +1,43 @@
 /*------------Generalt------------*/
 *,
 body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .main_container {
-  max-width: 1000px;
-  margin: auto;
+    max-width: 1000px;
+    margin: auto;
 }
 
 .main_container_inside {
-  max-width: 600px;
-  margin: auto;
+    max-width: 1000px;
+    margin: auto;
 }
 
 header {
-  background-image: linear-gradient(#433e3e, #9a9a9a);
-  width: 100%;
-  height: 4rem;
+    background-image: linear-gradient(#433e3e, #9a9a9a);
+    width: 100%;
+    height: 4rem;
 }
 
 header nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 header nav a {
-  text-decoration: none;
-  font-size: 1.2rem;
-  padding: 1rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 1rem;
 }
 
 /* unvisited link */
 header nav a:link {
-  color: #e8e5d2;
-  font-size: 1.5em;
+    color: #e8e5d2;
+    font-size: 1.5em;
 }
 
 /* visited link */
@@ -47,67 +47,67 @@ header nav a:link {
 
 /* mouse over link */
 header nav a:hover {
-  color: #1dff00;
+    color: #1dff00;
 }
 
 /* selected link */
 header nav a:active {
-  color: #ff019d;
+    color: #ff019d;
 }
 
 #footer {
-  background-color: ;
+    background-color: ;
 }
 
 h1 {
-  font-size: 3rem;
-  font-family: mencken-std-narrow, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  color: #333;
-  text-transform: uppercase;
-  border-top: 1px solid #333;
-  padding: 13px 0 10px 0;
-  margin: 40px 0 0 0;
-  letter-spacing: 2px;
+    font-size: 3rem;
+    font-family: mencken-std-narrow, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #333;
+    text-transform: uppercase;
+    border-top: 1px solid #333;
+    padding: 13px 0 10px 0;
+    margin: 40px 0 0 0;
+    letter-spacing: 2px;
 }
 
 h2 {
-  font-size: 2rem;
-  font-family: mencken-std-narrow, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  color: #333;
-  text-transform: uppercase;
-  border-top: 1px solid #333;
-  padding: 12px 0 10px 0;
-  margin: 40px 0 0 0;
-  letter-spacing: 1px;
+    font-size: 2rem;
+    font-family: mencken-std-narrow, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #333;
+    text-transform: uppercase;
+    border-top: 1px solid #333;
+    padding: 12px 0 10px 0;
+    margin: 40px 0 0 0;
+    letter-spacing: 1px;
 }
 
 h3 {
-  font-size: 1.2rem;
-  font-family: trasandina, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #333;
-  text-transform: uppercase;
-  padding: 0 0 0 0;
-  margin: 3px 0 0 0;
-  letter-spacing: 1px;
+    font-size: 1.2rem;
+    font-family: trasandina, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #333;
+    text-transform: uppercase;
+    padding: 0 0 0 0;
+    margin: 3px 0 0 0;
+    letter-spacing: 1px;
 }
 
 p,
 li {
-  font-size: 1rem;
-  font-family: trasandina, sans-serif;
-  font-weight: 300;
-  font-style: italic;
-  list-style: none;
-  color: #333;
-  padding: 0 0 0 0;
-  margin: 0 0 0 0;
-  letter-spacing: .5px;
+    font-size: 1rem;
+    font-family: trasandina, sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    list-style: none;
+    color: #333;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    letter-spacing: .5px;
 }
 
 
@@ -151,53 +151,79 @@ li {
 
 /*----------Om os--------------*/
 .col_om {
-  width: 50vw;
-  background-color: antiquewhite;
+    width: 50vw;
+    background-color: antiquewhite;
+    flex-basis: 300px;
 }
 
 #om_os {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 /*---------Kontakt---------*/
 .col_kontakt {
-  width: 50vw;
-  background-color: antiquewhite;
+    width: 50vw;
+    background-color: antiquewhite;
+    flex-basis: 300px;
 }
 
 #kontakt {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 #video {
-  background-color: aquamarine;
+    background-color: aquamarine;
 }
 
 /*---------Forside------*/
 #splash {
-  background-color: aqu;
+    background-color: aqu;
 }
 
 .col {
-  width: 50vw;
-  background-color: ;
+    flex-basis: 300px;
+    width: 50vw;
+    background-color: ;
 }
 
-#forside {
-  display: fle;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
 
 #produkt_kategorier {
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 #rep {
-  background-color: aqu;
+    background-color: aqua;
+}
+
+/*********shop*********/
+#shop {
+    background-color: antiquewhite
+}
+
+.col_produkt {
+    margin: 2px;
+    width: 16vw;
+    background-color: blueviolet;
+}
+
+#produkter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/******kurv*******/
+.col_kurv {
+    width: 100vw;
+    background-color: antiquewhite;
+}
+
+#kurv {
+    flex-wrap: wrap;
 }
