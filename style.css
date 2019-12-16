@@ -48,6 +48,51 @@ body {
   transform: scale(1.07);
 }
 
+.bg_img {
+  background-image: url(assets/billeder/bg_strings2.svg);
+  height: 2000px;
+  width: 4000px;
+  position: fixed;
+  opacity: .06;
+  filter: blur(2px);
+  z-index: -1;
+}
+
+.knap_h3 {
+  transition: .3s;
+  transition-timing-function: cubic-bezier(.2, 0, .3, 1);
+  height: 44px;
+  width: 173px;
+  background-color: rgb(224, 89, 52, 1);
+  padding: 8px 14px;
+  margin: 20px 0;
+  color: #fff;
+  border-top: 1px solid #E05934;
+  border-bottom: 1px solid #E05934;
+}
+
+.knap_h3:hover {
+  background-color: rgb(224, 89, 52, 0);
+  color: #E05934;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -171,7 +216,8 @@ h3 {
 }
 
 p,
-li {
+li,
+a {
   font-size: 1rem;
   font-family: trasandina, sans-serif;
   font-weight: 300;
@@ -181,6 +227,7 @@ li {
   padding: 0 0 0 0;
   margin: 0 0 0 0;
   letter-spacing: .5px;
+  text-decoration: none;
 }
 
 
@@ -307,7 +354,7 @@ li {
 }
 
 #rep {
-  margin: 0 0 33.45vw 0;
+  height: 33.45vw;
 }
 
 .rep_header {
