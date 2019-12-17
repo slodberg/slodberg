@@ -6,30 +6,35 @@ body {
   box-sizing: border-box;
 }
 
+
+
 .main_container {
-  max-width: 800px;
+  width: 100vw;
+  left: 0;
+  position: absolute;
   margin: auto;
 }
 
 .main_container_inside {
-  max-width: 800px;
-  margin: 0 10px;
+  padding: 0 31px;
+  max-width: 780px;
+  margin: auto;
 }
 
 .spacing1 {
-  height: 25px;
+  height: 12px;
 }
 
 .spacing2 {
-  height: 50px;
+  height: 25px;
 }
 
 .spacing3 {
-  height: 75px;
+  height: 37px;
 }
 
 .spacing4 {
-  height: 100px;
+  height: 50px;
 }
 
 .img_wrap {
@@ -50,13 +55,21 @@ body {
 
 .bg_img {
   background-image: url(assets/billeder/bg_strings2.svg);
-  height: 2000px;
-  width: 4000px;
-  position: fixed;
-  opacity: .06;
-  filter: blur(2px);
+  height: 170vh;
+  width: 100vw;
+  position: absolute;
+  opacity: .1;
+  filter: blur(.7px);
   z-index: -1;
+  top: 0;
+  transform: scale(3);
 }
+
+
+
+
+
+
 
 .knap_h3 {
   transition: .3s;
@@ -99,11 +112,10 @@ body {
 
 
 /*------------Navigation------------*/
-
 .nav_bg {
   background-color: rgba(222, 222, 222, 0.5);
   width: 100%;
-  height: 4rem;
+  height: 3rem;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -112,28 +124,39 @@ body {
 }
 
 
+
+header {
+  width: 100vw;
+  left: 0;
+  top: 0;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+}
+
 nav {
-  width: 100%;
+  width: 100vw;
+  padding: 0px 31px;
+  max-width: 780px;
+  z-index: 3;
   display: flex;
   justify-content: space-between;
   position: fixed;
-  top: 0;
-  max-width: 780px;
-  z-index: 2;
 }
 
 .nav_a {
   transition: .2s;
   transition-timing-function: cubic-bezier(.2, 0, .3, 1);
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: trasandina, sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #333;
   text-transform: uppercase;
-  padding: 1.5px 0 0 0;
-  margin: 1rem 10px;
+  padding: 1.5px 0 3px 0;
+  margin: .6rem 0 30px 0;
   letter-spacing: 1px;
   border: 0 solid #E05934;
 }
@@ -144,14 +167,15 @@ nav {
   color: #E05934;
   border-top: 1px solid #E05934;
   border-bottom: 1px solid #E05934;
-  margin: .95rem 10px;
+  margin: .55rem 0 30px 0;
 }
 
 
 nav img {
-  width: 8rem;
-  margin-top: .5rem;
+  width: 6rem;
+  margin-top: .3rem;
 }
+
 
 
 
@@ -163,11 +187,12 @@ footer {
   width: 100vw;
   left: 0;
   position: absolute;
+  margin: auto;
 }
 
 .footer_inside {
-  padding: 30px 0;
-  max-width: 800px;
+  padding: 30px 31px;
+  max-width: 780px;
   margin: auto;
 }
 
@@ -186,7 +211,7 @@ h1 {
   text-transform: uppercase;
   border-top: 1px solid #333;
   padding: 13px 0 10px 0;
-  margin: 100px 10px 0 10px;
+  margin: 50px 0px 0 0px;
   letter-spacing: 2px;
 }
 
@@ -199,7 +224,7 @@ h2 {
   text-transform: uppercase;
   border-top: 1px solid #333;
   padding: 12px 0 8.5px 0;
-  margin: 40px 10px 0 10px;
+  margin: 40px 0px 0 0px;
   letter-spacing: 1px;
 }
 
@@ -211,7 +236,7 @@ h3 {
   color: #333;
   text-transform: uppercase;
   padding: 0 0 0 0;
-  margin: 3px 10px 0 10px;
+  margin: 3px 0px 0 0px;
   letter-spacing: 1px;
 }
 
@@ -225,13 +250,13 @@ a {
   list-style: none;
   color: #333;
   padding: 0;
-  margin: 0 12px;
+  margin: 0 1px;
   letter-spacing: .5px;
   text-decoration: none;
 }
 
 .img_margin {
-  margin: 0 10px;
+  margin: 0 0px;
 }
 
 a {
@@ -293,14 +318,16 @@ a {
 .splash_header {
   color: #fff;
   width: 100vw;
-  max-width: 780px;
   margin: 0 auto;
+  max-width: 780px;
   border-top: 1px solid #fff;
-  font-size: 5rem;
-  text-align: left;
+  font-size: 3rem;
 }
 
-
+.splash_wrap {
+  padding: 10px 31px;
+  margin: 0 auto;
+}
 
 /*----------Kategorier--------------*/
 .kat_div {
@@ -350,7 +377,7 @@ a {
 }
 
 #produkt_kategorier .col {
-  column-count: 4;
+  column-count: 2;
 }
 
 .col {
@@ -367,6 +394,12 @@ a {
   background-color: #fff;
   transform: translate(18px, 10px) rotate(135deg);
 }
+
+
+
+
+
+
 
 
 
@@ -388,14 +421,23 @@ a {
 
 .rep_header {
   color: #fff;
-  max-width: 800px;
-  margin: 70px auto 0 auto;
-  padding: 0 10px;
+  max-width: 780px;
   font-weight: 100;
   font-style: italic;
-  font-size: 2rem;
+  font-size: 1rem;
   letter-spacing: 4.6px;
 }
+
+.rep_wrap {
+  width: 100vw;
+  max-width: 780px;
+  margin: 0 auto;
+  height: 31.45vw;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 31px;
+}
+
 
 /*----------Om os--------------*/
 #om_os {
@@ -410,9 +452,9 @@ a {
 
 .om_os_img {
   background-image: url(assets/billeder/spille_vinkel2.jpg);
-  height: 300px;
+  height: 400px;
   width: 100%;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -431,15 +473,6 @@ a {
   display: block;
 }
 
-/*---------Forside------*/
-#splash {
-  background-color: aqu;
-}
-
-#rep {
-  background-color: aqua;
-}
-
 /*********shop*********/
 
 .col_produkt {
@@ -451,7 +484,7 @@ a {
 #produkter .col {
   display: flex;
   flex-wrap: wrap;
-  column-count: 4;
+  column-count: 2;
 }
 
 /******kurv*******/
@@ -493,6 +526,10 @@ a {
   height: 500px;
 }
 
+#enkelt_produkt .img_wrap {
+  margin-bottom: 25px;
+}
+
 #enkelt_produkt h1 {
   margin-top: 0;
 }
@@ -523,13 +560,70 @@ a {
   margin: 20px 10px;
 }
 
+
+
 /*****mediaquery****/
-@media only screen and (max-width: 800px) {
+@media only screen and (min-width: 800px) {
   #produkt_kategorier .col {
-    column-count: 2;
+    column-count: 4;
   }
 
   #produkter {
-    column-count: 2;
+    column-count: 4;
+  }
+
+  .splash_header {
+    font-size: 5rem;
+  }
+
+  .rep_header {
+    font-size: 2rem;
+  }
+
+  h1 {
+    margin: 100px 0px 0 0px;
+  }
+
+  .spacing1 {
+    height: 25px;
+  }
+
+  .spacing2 {
+    height: 50px;
+  }
+
+  .spacing3 {
+    height: 75px;
+  }
+
+  .spacing4 {
+    height: 100px;
+  }
+
+  .nav_bg {
+    height: 4rem;
+  }
+
+  .nav_a {
+    font-size: 1.2rem;
+    padding: 1.5px 0 0 0;
+    margin: 1rem 0px;
+  }
+
+  .nav_a:hover {
+    margin: .95rem 0px;
+  }
+
+  nav img {
+    width: 8rem;
+    margin-top: .5rem;
+  }
+
+  .rep_wrap,
+  .splash_wrap,
+  .footer_inside,
+  .main_container_inside,
+  nav {
+    padding: 0 0;
   }
 }
