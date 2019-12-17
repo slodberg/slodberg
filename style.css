@@ -225,7 +225,7 @@ a {
   list-style: none;
   color: #333;
   padding: 0;
-  margin: 0 10px;
+  margin: 0 12px;
   letter-spacing: .5px;
   text-decoration: none;
 }
@@ -272,7 +272,7 @@ a {
 }
 
 #produkt_splash .splash_img {
-  height: 55vw;
+  height: 45vw;
   width: 100vw;
   background-image: url(assets/billeder/spille_vinkel2.jpg);
   background-repeat: no-repeat;
@@ -282,21 +282,24 @@ a {
   top: -30px;
   display: flex;
   align-items: flex-end;
+  justify-content: flex-start;
 }
 
-#splash {
+#splash,
+#produkt_splash {
   height: 45vw;
 }
 
 .splash_header {
   color: #fff;
   width: 100vw;
-  max-width: 800px;
+  max-width: 780px;
+  margin: 0 auto;
   border-top: 1px solid #fff;
   font-size: 5rem;
   text-align: left;
-  margin: 0 auto;
 }
+
 
 
 /*----------Kategorier--------------*/
@@ -474,6 +477,51 @@ a {
 }
 
 
+
+/******enkelt produkt*******/
+#enkelt_produkt {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col_enkelt_produkt {
+  flex-basis: 300px;
+  flex-grow: 1;
+}
+
+#enkelt_produkt .kategori {
+  height: 500px;
+}
+
+#enkelt_produkt h1 {
+  margin-top: 0;
+}
+
+.antal_produkter {
+  display: flex;
+  margin-top: 20px;
+}
+
+.plus {
+  width: 32px;
+  height: 32px;
+  background-color: #E05934;
+  opacity: .5;
+  margin: 0 10px;
+}
+
+.minus {
+  width: 32px;
+  height: 32px;
+  background-color: #42CE99;
+  opacity: .5;
+  margin: 0 10px;
+}
+
+#enkelt_produkt .knap_h3 {
+  width: 130px;
+  margin: 20px 10px;
+}
 
 /*****mediaquery****/
 @media only screen and (max-width: 800px) {
