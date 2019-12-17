@@ -13,7 +13,7 @@ body {
 
 .main_container_inside {
   max-width: 800px;
-  margin: 0 10px 0 10px;
+  margin: 0 10px;
 }
 
 .spacing1 {
@@ -112,13 +112,13 @@ body {
 }
 
 
-header nav {
+nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
   position: fixed;
   top: 0;
-  max-width: 800px;
+  max-width: 780px;
   z-index: 2;
 }
 
@@ -133,7 +133,7 @@ header nav {
   color: #333;
   text-transform: uppercase;
   padding: 1.5px 0 0 0;
-  margin: 1rem 0;
+  margin: 1rem 10px;
   letter-spacing: 1px;
   border: 0 solid #E05934;
 }
@@ -144,7 +144,7 @@ header nav {
   color: #E05934;
   border-top: 1px solid #E05934;
   border-bottom: 1px solid #E05934;
-  margin: .95rem 0;
+  margin: .95rem 10px;
 }
 
 
@@ -166,7 +166,7 @@ footer {
 }
 
 .footer_inside {
-  padding: 30px 0 0 0vw;
+  padding: 30px 0;
   max-width: 800px;
   margin: auto;
 }
@@ -186,7 +186,7 @@ h1 {
   text-transform: uppercase;
   border-top: 1px solid #333;
   padding: 13px 0 10px 0;
-  margin: 100px 0 0 0;
+  margin: 100px 10px 0 10px;
   letter-spacing: 2px;
 }
 
@@ -199,7 +199,7 @@ h2 {
   text-transform: uppercase;
   border-top: 1px solid #333;
   padding: 12px 0 8.5px 0;
-  margin: 40px 0 0 0;
+  margin: 40px 10px 0 10px;
   letter-spacing: 1px;
 }
 
@@ -211,7 +211,7 @@ h3 {
   color: #333;
   text-transform: uppercase;
   padding: 0 0 0 0;
-  margin: 3px 0 0 0;
+  margin: 3px 10px 0 10px;
   letter-spacing: 1px;
 }
 
@@ -224,13 +224,15 @@ a {
   font-style: italic;
   list-style: none;
   color: #333;
-  padding: 0 0 0 0;
-  margin: 0 0 0 0;
+  padding: 0;
+  margin: 0 10px;
   letter-spacing: .5px;
   text-decoration: none;
 }
 
-
+.img_margin {
+  margin: 0 10px;
+}
 
 
 
@@ -282,7 +284,8 @@ a {
 /*----------Kategorier--------------*/
 .kat_div {
   flex-grow: 1;
-  margin: 10px;
+  margin-bottom: 20px;
+  flex-basis: 200px;
 }
 
 .kategori {
@@ -323,13 +326,14 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0 -10px;
 }
 
 .col {
-  flex-basis: 380px;
+  flex-basis: 300px;
   flex-grow: 1;
   display: flex;
+  flex-wrap: wrap;
+  column-count: 2;
 }
 
 .corner_overlay {
@@ -360,34 +364,34 @@ a {
 .rep_header {
   color: #fff;
   max-width: 800px;
-  margin: 100px auto 0 auto;
-  border-top: 1px solid #fff;
+  margin: 70px auto 0 auto;
+  padding: 0 10px;
   font-weight: 100;
   font-style: italic;
-  font-size: 2.5rem;
+  font-size: 2rem;
   letter-spacing: 4.6px;
 }
 
 /*----------Om os--------------*/
-.col_om {
-  width: 50vw;
-  background-color: antiquewhite;
-  flex-basis: 300px;
-}
-
 #om_os {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+}
+
+.col h1,
+.col p {
+  display: block;
+}
+
+.om_os_img {
+  background-image: url(assets/billeder/spille_vinkel2.jpg);
+  height: 300px;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 /*---------Kontakt---------*/
-.col_kontakt {
-  width: 50vw;
-  background-color: antiquewhite;
-  flex-basis: 300px;
-}
-
 #kontakt {
   display: flex;
   flex-wrap: wrap;
@@ -396,6 +400,10 @@ a {
 
 #video {
   background-color: aquamarine;
+}
+
+.col {
+  display: block;
 }
 
 /*---------Forside------*/
@@ -408,19 +416,15 @@ a {
 }
 
 /*********shop*********/
-#shop {
-  background-color: antiquewhite
-}
 
 .col_produkt {
-  margin: 2px;
-  width: 16vw;
-  background-color: blueviolet;
+  flex-basis: 190px;
+  flex-grow: 1;
+  margin-bottom: 20px;
 }
 
 #produkter {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
 }
 
@@ -432,4 +436,16 @@ a {
 
 #kurv {
   flex-wrap: wrap;
+}
+
+
+
+
+
+/******produkt*******/
+.produkt {
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  column-count: 2;
 }
