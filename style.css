@@ -34,7 +34,7 @@ body {
 }
 
 .spacing4 {
-  height: 50px;
+  height: 70px;
 }
 
 .img_wrap {
@@ -337,19 +337,6 @@ a {
   margin: 0 auto;
 }
 
-/*********shop*********/
-
-.col_produkt {
-  flex-grow: 1;
-  margin-bottom: 20px;
-  flex-basis: 190px;
-}
-
-#produkter .col {
-  display: flex;
-  flex-wrap: wrap;
-  column-count: 2;
-}
 
 /*----------Kategorier--------------*/
 .kat_div {
@@ -359,7 +346,7 @@ a {
 }
 
 .kategori {
-  height: 200px;
+  height: 250px;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -392,13 +379,39 @@ a {
   align-items: flex-end;
 }
 
-#produkt_kategorier, #produkter {
+.kat_img5 {
+  background: url(assets/billeder/guld_guitar.jpg) no-repeat center;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.kat_img6 {
+  background: url(assets/billeder/produkt_guitar.jpg) no-repeat center;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+#produkt_kategorier {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#produkter {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
 #produkt_kategorier .col {
+  column-count: 2;
+}
+
+#produkter .col {
   column-count: 2;
 }
 
@@ -491,6 +504,12 @@ a {
   display: block;
 }
 
+.col2 {
+  display: block;
+  margin-left: 15px;
+
+}
+
 
 /******kurv*******/
 .col_kurv {
@@ -521,10 +540,6 @@ a {
   flex-wrap: wrap;
 }
 
-.col_enkelt_produkt {
-  flex-basis: 300px;
-  flex-grow: 1;
-}
 
 #enkelt_produkt .kategori {
   height: 500px;
@@ -540,7 +555,11 @@ a {
 
 .antal_produkter {
   display: flex;
-  margin-top: 20px;
+  margin-top: 40px;
+}
+
+.antal_produkter > h3 {
+  margin: 0 15px;
 }
 
 .plus {
@@ -548,7 +567,7 @@ a {
   height: 32px;
   background-color: #E05934;
   opacity: .5;
-  margin: 0 10px;
+  text-align: center;
 }
 
 .minus {
@@ -556,12 +575,12 @@ a {
   height: 32px;
   background-color: #42CE99;
   opacity: .5;
-  margin: 0 10px;
+  text-align: center;
 }
 
 #enkelt_produkt .knap_h3 {
   width: 130px;
-  margin: 20px 10px;
+  margin: 20px 0px;
 }
 
 
@@ -572,7 +591,7 @@ a {
     column-count: 4;
   }
 
-  #produkter {
+  #produkter .col {
     column-count: 4;
   }
 
