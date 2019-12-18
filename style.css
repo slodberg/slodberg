@@ -512,17 +512,62 @@ a {
 
 
 /******kurv*******/
-.col_kurv {
-  width: 100vw;
-  background-color: antiquewhite;
+#indkøbskurv h1 {
+  text-align: center;
 }
 
 #kurv {
+  width: 60vw;
+  margin: 0 auto;
   flex-wrap: wrap;
 }
 
+.col_kurv {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+
+}
+
+.kurv_img {
+  background-image: url(assets/billeder/guld_guitar.jpg);
+  background-size: cover;
+  width: 40px;
+  height: 60px;
+  margin: 0 10px 10px 0;
+}
 
 
+.info {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.antal_varer {
+  display: flex;
+}
+
+.antal varer > p {
+  margin: 0 10px;
+}
+
+.min {
+  width: 20px;
+  height: 20px;
+  background-color: #E05934;
+  opacity: .5;
+  text-align: center;
+}
+
+.pl {
+  width: 20px;
+  height: 20px;
+  background-color: #42CE99;
+  opacity: .5;
+  text-align: center;
+}
 
 
 /******produkt*******/
@@ -649,4 +694,9 @@ a {
   nav {
     padding: 0 0;
   }
+
+  #kurv {
+    width: 30vw;
+  }
+
 }
