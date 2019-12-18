@@ -286,7 +286,7 @@ a {
 #splash .splash_img {
   height: 55vw;
   width: 100vw;
-  background-image: url(assets/billeder/spille_vinkel3.jpg);
+  background-image: url(assets/billeder/spille_vinkel.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   left: 0;
@@ -308,6 +308,14 @@ a {
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
+}
+
+#splash video {
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1
 }
 
 #splash,
@@ -463,10 +471,6 @@ a {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-}
-
-#video {
-  background-color: aquamarine;
 }
 
 .col {
