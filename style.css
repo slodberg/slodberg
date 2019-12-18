@@ -363,16 +363,18 @@ a {
 
 .splash_header {
   color: #fff;
-  width: 100vw;
   margin: 0 auto;
   max-width: 780px;
   border-top: 1px solid #fff;
   font-size: 3rem;
+  letter-spacing: 4.5px;
 }
 
 .splash_wrap {
+  width: 100vw;
   padding: 10px 31px;
   margin: 0 auto;
+  position: relative;
 }
 
 
@@ -381,6 +383,10 @@ a {
   flex-grow: 1;
   margin-bottom: 20px;
   flex-basis: 190px;
+}
+
+.kat_div p {
+  margin-top: 5px;
 }
 
 .kategori {
@@ -544,7 +550,7 @@ a {
 
 .col2 {
   display: block;
-  margin-left: 15px;
+
 
 }
 
@@ -682,6 +688,7 @@ a {
     font-size: 5rem;
   }
 
+
   .rep_header {
     font-size: 2rem;
   }
@@ -737,4 +744,11 @@ a {
     width: 30vw;
   }
 
+  .col2 {
+    margin-left: 15px;
+  }
+
+  .h1_spacing {
+    margin-bottom: 80px;
+  }
 }
